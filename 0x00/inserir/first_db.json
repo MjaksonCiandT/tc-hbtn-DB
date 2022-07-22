@@ -1,12 +1,1 @@
-PRAGMA foreign_keys=OFF;
-BEGIN TRANSACTION;
-CREATE TABLE CLIENTE(id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nome varchar(80) NOT NULL, email varchar (40) NOT NULL, telefone integer);
-INSERT INTO CLIENTE VALUES(1,'Betty','betty@techcamps.com',12345678);
-INSERT INTO CLIENTE VALUES(2,'Betty','betty@techcamps.com',12345678);
-INSERT INTO CLIENTE VALUES(3,'Betty','betty@techcamps.com',12345678);
-INSERT INTO CLIENTE VALUES(4,'Betty','betty@techcamps.com',12345678);
-INSERT INTO CLIENTE VALUES(5,'Betty','betty@techcamps.com',12345678);
-INSERT INTO CLIENTE VALUES(6,'Betty','betty@techcamps.com',12345678);
-DELETE FROM sqlite_sequence;
-INSERT INTO sqlite_sequence VALUES('CLIENTE',6);
-COMMIT;
+[{"id":1,"nome":"Betty","email":"betty@techcamps.com","telefone":12345678},{"id":2,"nome":"Betty","email":"betty@techcamps.com","telefone":12345678},{"id":3,"nome":"Betty","email":"betty@techcamps.com","telefone":12345678},{"id":4,"nome":"Betty","email":"betty@techcamps.com","telefone":12345678},{"id":5,"nome":"Betty","email":"betty@techcamps.com","telefone":12345678},{"id":6,"nome":"Betty","email":"betty@techcamps.com","telefone":12345678}]
