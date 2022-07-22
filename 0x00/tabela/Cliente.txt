@@ -1,0 +1,7 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE CLIENTE(id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nome varchar(80) NOT NULL, email varchar (40) NOT NULL, telefone integer);
+INSERT INTO CLIENTE VALUES(1,'Betty','betty@techcamps.com',12345678);
+DELETE FROM sqlite_sequence;
+INSERT INTO sqlite_sequence VALUES('CLIENTE',1);
+COMMIT;

@@ -1,0 +1,18 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE CLIENTE(id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nome varchar(80) NOT NULL, email varchar (40) NOT NULL, telefone integer);
+INSERT INTO CLIENTE VALUES(1,'Betty','betty@techcamps.com',12345678);
+INSERT INTO CLIENTE VALUES(2,'Betty','betty@techcamps.com',12345678);
+INSERT INTO CLIENTE VALUES(3,'Betty','betty@techcamps.com',12345678);
+INSERT INTO CLIENTE VALUES(4,'Betty','betty@techcamps.com',12345678);
+INSERT INTO CLIENTE VALUES(5,'Betty','betty@techcamps.com',12345678);
+INSERT INTO CLIENTE VALUES(6,'Betty','betty@techcamps.com',12345678);
+INSERT INTO CLIENTE VALUES(7,'Betty','betty@techcamps.com',12345678);
+INSERT INTO CLIENTE VALUES(8,'Betty','betty@techcamps.com',12345678);
+INSERT INTO CLIENTE VALUES(9,'Betty','betty@techcamps.com',12345678);
+INSERT INTO CLIENTE VALUES(10,'Betty','betty@techcamps.com',12345678);
+INSERT INTO CLIENTE VALUES(11,'Betty','betty@techcamps.com',12345678);
+INSERT INTO CLIENTE VALUES(12,'Betty','betty@techcamps.com',12345678);
+DELETE FROM sqlite_sequence;
+INSERT INTO sqlite_sequence VALUES('CLIENTE',12);
+COMMIT;
