@@ -3,27 +3,25 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionSQLite {
-    public static void main(String[] args) {
-        initConnection();
-    }
-
-    public static void initConnection(){
-        Connection conectar = null;
+    public static void initConnection() {
+        Connection conn = null;
         try {
-            String url = "jdbc:sqlite:sqlite_database_2022.db";
-            conectar = DriverManager.getConnection(url);
-            System.out.print("Conectado");
+            String url = "jdbc:sqlite:database_2022.db";
+            conn = DriverManager.getConnection(url);
+            System.out.println("conexão SQLite estabelecida.");
         } catch (SQLException e) {
-            System.err.println(e.getMessage());
+            System.out.println(e.getMessage());
         } finally {
             try {
-                if (conectar != null) {
-                    conectar.close();
-                    System.out.print("Desconectado");
+                if (conn != null) {
+                    conn.close();
                 }
-            } catch (SQLException e) {
-                System.out.println(e.getMessage());
+            } catch (SQLException ex) {
+                System.out.println(ex.getMessage());
             }
         }
+    }
+    public static void main(String[] args) {
+        initConnection();
     }
 }
