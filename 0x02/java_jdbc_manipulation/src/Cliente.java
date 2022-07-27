@@ -1,5 +1,3 @@
-package org.example;
-
 public class Cliente{
     public Integer id;
     public String nome;
