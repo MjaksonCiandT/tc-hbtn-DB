@@ -1,5 +1,3 @@
-package org.example;
-
 public class ClienteTest {
     public static void main(String[] args) {
 
@@ -33,5 +31,4 @@ public class ClienteTest {
         clienteDAOImpl.delete(url, 2);
         clienteDAOImpl.selectAll(url);
     }
-
 }
