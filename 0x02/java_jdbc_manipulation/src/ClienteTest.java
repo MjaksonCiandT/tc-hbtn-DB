@@ -5,14 +5,11 @@ public class ClienteTest {
 
         String url = "jdbc:sqlite:sqlite_database_marco_2022.db";
 
-        // 1) Criando o banco de dados
         ClienteDAOImpl clienteDAOImpl = new ClienteDAOImpl();
         clienteDAOImpl.connect(url);
 
-        // 2 - Criando a tabela
         clienteDAOImpl.createTable(url);
 
-        // 3 - Inserindo clientes
         Cliente c1 = new Cliente();
         c1.setNome("Danilo R. Pereira");
         c1.setIdade(37);
@@ -28,14 +25,11 @@ public class ClienteTest {
         clienteDAOImpl.insert(url, c1);
         clienteDAOImpl.insert(url, c1iente2);
 
-        // 4 - selecionado todos os cliente
         clienteDAOImpl.selectAll(url);
 
-        // 5 - atualizando um cliente
         clienteDAOImpl.update(url, 1, "Danilo Rodrigues Pereira", 38);
         clienteDAOImpl.selectAll(url);
 
-        // 5 - deletando um cliente
         clienteDAOImpl.delete(url, 2);
         clienteDAOImpl.selectAll(url);
     }
