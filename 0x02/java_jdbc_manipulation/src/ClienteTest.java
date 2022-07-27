@@ -28,10 +28,8 @@ public class ClienteTest {
         clienteDAOImpl.insert(url, c1);
         clienteDAOImpl.insert(url, c1iente2);
 
-
         // 4 - selecionado todos os cliente
         clienteDAOImpl.selectAll(url);
-
 
         // 5 - atualizando um cliente
         clienteDAOImpl.update(url, 1, "Danilo Rodrigues Pereira", 38);
